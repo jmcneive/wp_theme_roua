@@ -1,0 +1,149 @@
+.roua-menu {
+	position: fixed;
+	width: 60%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-position: left top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 50px 120px;
+	overflow-y: inherit;
+	.transition(0.4s);
+	.logos , .open-menu , .social-icons {
+		.translateX(-100px);
+		.transition-cubic(0.5s) !important;
+		opacity: 0;
+	}
+	.menu {
+		margin-top: 140px;
+		.translateX(-100px);
+		.transition-cubic(0.5s);
+		opacity: 0;
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			li {
+				ul {
+					display: none;
+					padding-left: 30px;
+				}
+				a {
+					display: inline-block;
+					font-family: 'Abel';
+					color: @roua-primary-color;
+					font-size: 60px;
+					line-height: 90px;
+					text-transform: uppercase;
+					position: relative;
+					.transition(0.5s);
+					&:after {
+						content: '';
+						width: 100%;
+						bottom: 0;
+						left: 0;
+						height: 3px;
+						position: absolute;
+						background: @roua-secondary-color;
+						opacity: 0;
+						visibility: hidden;
+						.transition-cubic(0.3s);
+					}
+					&:hover  {
+						&:after {
+							bottom: 8px;
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+				&.no-hovered {
+					a {
+						color: #b0b0b0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.roua-menu {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.roua-menu {
+		.menu {
+			margin-top: 80px;
+			ul {
+				li {
+					a {
+						font-size: 42px;
+						line-height: 60px;
+						&:after {
+							height: 2px;
+						}
+						&:hover {
+							&:after {
+								bottom: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.roua-menu .menu ul li ul {
+		padding-left: 0;
+	}
+	.roua-menu {
+		text-align: center;
+		a.open-menu {
+			display: inline-block;
+			float: none;
+			margin-bottom: 20px;
+			.icon {
+				float: none;
+				top: 0;
+				display: inline-block;
+			}
+		}
+		.logos {
+			padding-right: 0;
+			margin-right: 0;
+			float: none;
+			display: inline-block;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		.social-icons {
+			float: none;
+			display: inline-block;
+			width: 100%;
+		}
+		.menu {
+			margin-top: 20px;
+			ul li a {
+				font-size: 28px;
+				line-height: 42px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.roua-menu {
+		width: 80%;
+	}
+}
+
+@media (max-width: 330px) {
+	.roua-menu {
+		width: 100%;
+	}
+}

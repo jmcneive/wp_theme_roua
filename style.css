@@ -1,0 +1,46 @@
+/*
+Theme Name: ROUA - Creative Portfolio WordPress Theme
+Theme URI: http://demo.stylishthemes.co/roua/
+Author: StylishThemes
+Author URI: http://stylishthemes.co
+Description: Roua is a theme for clean & creative portfolio websites.
+Version: 2.0.0
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: diva
+Tags: black, blue, white, two-columns, responsive-layout, threaded-comments, translation-ready, custom-menu
+*/
+
+.pagination-roua {
+    padding-bottom: 45px;
+}
+
+.portfolio-single .header-portfolio-single .like span {
+    text-align: center;
+}
+
+.zilla-likes-postfix {
+    margin: 0 !important;
+}
+
+section.no-mb .breadcrumb {
+    margin-bottom: 0px;
+}
+
+.owl-carousel .owl-item img {
+    height: auto;
+}
+
+.wp-caption, .wp-caption-text, .gallery-caption, .bypostauthor, .aligncenter {}
+
+/*.isotope-item figure {*/
+    /*min-height: 450px;*/
+/*}*/
+
+.comment-container ul.comments li .comment .left-section img {
+    height:auto;
+}
+
+.content-portfolio-single > p {
+    display: inline;
+}
